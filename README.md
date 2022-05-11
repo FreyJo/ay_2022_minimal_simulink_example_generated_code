@@ -21,3 +21,10 @@ oneliner version
 ```
 git clone https://github.com/acados/acados.git && cd acados && git submodule update --init --recursive && mkdir -p build && cmake -DACADOS_EXAMPLES=OFF -DACADOS_UNIT_TESTS=OFF -DACADOS_SILENT=OFF -DACADOS_WITH_QPOASES=OFF -DACADOS_WITH_OSQP=OFF .. && make install -j8 && cd ..
 ```
+
+
+## export paths
+```
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:"<acados_root>/lib"
+export ACADOS_SOURCE_DIR="<acados_root>"
+```
